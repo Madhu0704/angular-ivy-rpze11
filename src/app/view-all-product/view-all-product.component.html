@@ -1,0 +1,26 @@
+<p>
+view-all-product works!
+</p>
+<style>
+    table{
+        width:400px;
+        height:200px;
+        background-color:blanchedalmond;
+    }
+
+</style>
+<table border='1'>
+    <tr>
+        <th>ID</th><th>Name</th><th>Price</th><th>Stock</th><th>Availability</th>
+    </tr>
+    <tr *ngFor='let obj of list'>
+        <td>{{obj.pId}}</td>
+        <td>{{obj.pName}}</td>
+        <td>{{obj.price}}</td>
+        <td>{{obj.stock}}</td>
+        <td>{{obj.availability==true?"YES":"NO"}}</td>
+        
+
+
+    </tr>
+</table>
